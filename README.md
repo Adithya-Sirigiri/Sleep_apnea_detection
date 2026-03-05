@@ -31,13 +31,13 @@ Sleep apnea is a condition where breathing repeatedly stops during sleep. It aff
 
 The dataset contains overnight polysomnography recordings from 5 participants. Each participant folder contains 5 files:
 
-File                                        Description                                               Sampling Rate 
-
-`nasal_airflow.txt`             Nasal airflow signal                                                       32 Hz 
-`thoracic_movement.txt`         Thoracic and abdominal movement                                            32 Hz 
-`spo2.txt`                      Blood oxygen saturation                                                    4 Hz 
-`flow_events.txt`               Annotated breathing events with start and end timestamps                     — 
-`sleep_profile.txt`             Sleep stage annotations recorded every 30 seconds                            — 
+| File | Description | Sampling Rate |
+|------|-------------|---------------|
+| `nasal_airflow.txt` | Nasal airflow signal | 32 Hz |
+| `thoracic_movement.txt` | Thoracic and abdominal movement | 32 Hz |
+| `spo2.txt` | Blood oxygen saturation | 4 Hz |
+| `flow_events.txt` | Annotated breathing events with start and end timestamps | — |
+| `sleep_profile.txt` | Sleep stage annotations recorded every 30 seconds | — |
 
 ---
 
@@ -93,15 +93,15 @@ pip install -r requirements.txt
 
 ## Dependencies
 
- Library                                       Used For 
-
- `numpy`                         numerical operations and array manipulation
- `pandas`                        loading and processing signal data files 
- `scipy`                         butterworth bandpass filter for signal preprocessing
- `matplotlib`                    generating multi page PDF visualizations
- `scikit-learn`                  label encoding, normalization and evaluation metrics
- `torch`                         building and training the 1D CNN and Conv-LSTM models
- `PyWavelets`                    wavelet based signal processing utilities 
+| Library | Used For |
+|---------|----------|
+| `numpy` | numerical operations and array manipulation |
+| `pandas` | loading and processing signal data files |
+| `scipy` | butterworth bandpass filter for signal preprocessing |
+| `matplotlib` | generating multi page PDF visualizations |
+| `scikit-learn` | label encoding, normalization and evaluation metrics |
+| `torch` | building and training the 1D CNN and Conv-LSTM models |
+| `PyWavelets` | wavelet based signal processing utilities |
 
 ---
 
